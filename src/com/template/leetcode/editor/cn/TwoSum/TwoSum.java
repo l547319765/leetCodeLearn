@@ -41,18 +41,31 @@
 // Related Topics 数组 哈希表 
 // 👍 10605 👎 0
 
-package com.template.leetcode.editor.cn;
+package com.template.leetcode.editor.cn.TwoSum;
+
+import java.util.HashMap;
+
 public class TwoSum {
     public static void main(String[] args) {
         Solution solution = new TwoSum().new Solution();
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
 
-        return new int[]{};
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int[] twoSum(int[] nums, int target) {
+            HashMap<Integer, Integer> hm = new HashMap<>();
+            int i = 0;
+            for (int num : nums) {
+                if (null == hm.get(target - num)) {
+                    hm.put(num, i);
+                    i++;
+                } else {
+                    break;
+                }
+            }
+            return new int[]{hm.get(target - nums[i]), i};
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
