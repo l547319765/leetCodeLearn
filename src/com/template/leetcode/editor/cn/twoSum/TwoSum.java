@@ -41,7 +41,7 @@
 // Related Topics 数组 哈希表 
 // 👍 10605 👎 0
 
-package com.template.leetcode.editor.cn.TwoSum;
+package com.template.leetcode.editor.cn.twoSum;
 
 import java.util.HashMap;
 

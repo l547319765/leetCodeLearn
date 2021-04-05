@@ -43,31 +43,32 @@
 // Related Topics 数学 
 // 👍 2638 👎 0
 
-package com.template.leetcode.editor.cn;
+package com.template.leetcode.editor.cn.reverseInteger;
+
 
 public class ReverseInteger {
     public static void main(String[] args) {
         Solution solution = new ReverseInteger().new Solution();
-        solution.reverse(1534236469);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int reverse(int x) {
             int result = 0;
-            int xx = Math.abs(x);
+            int pre;
             while (true) {
-                // 1534236469
-                if (result + xx % 10 / 10 >= Integer.MAX_VALUE / 10) {
+                pre = result;
+                if (pre != result * 10 / 10) {
                     return 0;
                 }
-                if (xx < 10) {
-                    return x < 0 ? -(result * 10 + xx) : result * 10 + xx;
+                if (-10 < x && x < 10) {
+                    return result * 10 + x;
                 }
-                result = result * 10 + xx % 10;
-                xx /= 10;
+                result = result * 10 + x % 10;
+                x /= 10;
             }
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
+    // 边界值 ： Integer.Min
 }
