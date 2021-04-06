@@ -32,7 +32,6 @@
 
 package com.template.leetcode.editor.cn;
 
-import java.util.Collections;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {
@@ -46,26 +45,16 @@ public class LongestCommonPrefix {
             if (strs.length == 0) {
                 return "";
             }
-            StringBuilder stringBuilder = new StringBuilder();
-            char[] resultChars = new char[200];
-            int resultCharsNum = strs[0].length();
-            System.arraycopy(strs[0].toCharArray(), 0, resultChars, 0, strs[0].length());
-            char[] chars;
+            String s = strs[0];
             for (String str : strs) {
-                chars = str.toCharArray();
-                int length = chars.length;
-                resultCharsNum = Math.min(length, resultCharsNum);
-                for (int i = 0; i < length; i++) {
-                    if (chars[i] != resultChars[i]) {
-                        resultCharsNum = Math.min(i, resultCharsNum);
-                        break;
-                    }
+                if ("".equals(str)) {
+                    return str;
+                }
+                while (!str.startsWith(s)) {
+                    s = s.substring(0, s.length()-1);
                 }
             }
-            for (int i = 0; i < resultCharsNum; i++) {
-                stringBuilder.append(resultChars[i]);
-            }
-            return stringBuilder.toString();
+            return s;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
