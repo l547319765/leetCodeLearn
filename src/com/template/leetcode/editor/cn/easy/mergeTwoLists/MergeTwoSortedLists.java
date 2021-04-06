@@ -73,32 +73,18 @@ public class MergeTwoSortedLists {
                 l1 = l1.next;
             }
             ListNode preNode = resultNode;
-            while (null != l1 || null != l2) {
-                if (null != l1 && null != l2) {
-                    if (l1.val > l2.val) {
-                        preNode.next = l2;
-                        preNode = preNode.next;
-                        l2 = l2.next;
-                    } else if (l1.val < l2.val) {
-                        preNode.next = l1;
-                        preNode = preNode.next;
-                        l1 = l1.next;
-                    } else {
-                        preNode.next = l2;
-                        preNode = preNode.next;
-                        l2 = l2.next;
-                        preNode.next = l1;
-                        preNode = preNode.next;
-                        l1 = l1.next;
-                    }
-                } else if (null == l1) {
+            while (null != l1 && null != l2) {
+                if (l1.val >= l2.val) {
                     preNode.next = l2;
-                    break;
+                    preNode = preNode.next;
+                    l2 = l2.next;
                 } else {
                     preNode.next = l1;
-                    break;
+                    preNode = preNode.next;
+                    l1 = l1.next;
                 }
             }
+            preNode.next = null == l1 ? l2 : l1;
             return resultNode;
         }
     }
