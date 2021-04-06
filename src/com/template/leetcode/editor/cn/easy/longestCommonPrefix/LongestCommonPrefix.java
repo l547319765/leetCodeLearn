@@ -30,7 +30,7 @@
 // Related Topics 字符串 
 // 👍 1546 👎 0
 
-package com.template.leetcode.editor.cn.longestCommonPrefix;
+package com.template.leetcode.editor.cn.easy.longestCommonPrefix;
 
 
 public class LongestCommonPrefix {

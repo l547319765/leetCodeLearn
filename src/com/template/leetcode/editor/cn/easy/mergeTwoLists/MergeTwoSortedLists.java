@@ -35,7 +35,7 @@
 // Related Topics 递归 链表 
 // 👍 1645 👎 0
 
-package com.template.leetcode.editor.cn.mergeTwoLists;
+package com.template.leetcode.editor.cn.easy.mergeTwoLists;
 
 import com.template.leetcode.editor.beans.ListNode;
 

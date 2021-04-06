@@ -74,7 +74,7 @@
 // Related Topics 数学 字符串 
 // 👍 1261 👎 0
 
-package com.template.leetcode.editor.cn.romanToInt;
+package com.template.leetcode.editor.cn.easy.romanToInt;
 
 public class RomanToInteger {
     public static void main(String[] args) {

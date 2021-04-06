@@ -43,7 +43,7 @@
 // Related Topics 数学 
 // 👍 2638 👎 0
 
-package com.template.leetcode.editor.cn.reverseInteger;
+package com.template.leetcode.editor.cn.easy.reverseInteger;
 
 
 public class ReverseInteger {

@@ -48,7 +48,7 @@
 // Related Topics 数学 
 // 👍 1448 👎 0
 
-package com.template.leetcode.editor.cn.isPalindrome;
+package com.template.leetcode.editor.cn.easy.isPalindrome;
 
 public class PalindromeNumber {
     public static void main(String[] args) {

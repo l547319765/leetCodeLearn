@@ -54,7 +54,7 @@
 // Related Topics 栈 字符串 
 // 👍 2309 👎 0
 
-package com.template.leetcode.editor.cn.isValidParentheses;
+package com.template.leetcode.editor.cn.easy.isValidParentheses;
 
 import java.util.*;
 
