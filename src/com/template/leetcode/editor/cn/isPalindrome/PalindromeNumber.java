@@ -50,13 +50,9 @@
 
 package com.template.leetcode.editor.cn.isPalindrome;
 
-import java.util.Deque;
-import java.util.LinkedList;
-
 public class PalindromeNumber {
     public static void main(String[] args) {
         Solution solution = new PalindromeNumber().new Solution();
-        solution.isPalindrome(121);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
