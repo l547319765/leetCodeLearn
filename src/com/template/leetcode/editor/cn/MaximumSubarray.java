@@ -80,6 +80,4 @@ public class MaximumSubarray {
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
-
-
 }
